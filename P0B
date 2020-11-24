@@ -1,0 +1,105 @@
+/////////////////////////////////////////////////////////////////
+ //
+ // Name: Project 0 Bravo
+ // Author: Melvin Dokes (Dokesml@gmail.com)
+ // Date: 11/13/2020
+ // Description: Series of apex methods to demonstrate
+ // basic understanding of coding concepts.
+ //
+ /////////////////////////////////////////////////////////////////
+
+public class Project0B 
+{
+
+    public static Integer nFibonacci( Integer n )
+    {
+		integer x = 0, y = 1, z, i;
+		if( n == 0)
+		{
+			return x;
+		}
+			for(i = 2; i <= n; i++)
+			{
+				z = x + y;
+				x = y;
+				Y = z;
+			}
+			return y;
+
+	public static List<Integer>sortList(List<Integer>intList)
+    {
+        Integer[] NumList = new List<Integer>{2,4,5,1,3,1};
+        integer x = size(NumList)
+        integer y = x;
+        if (y > 0)
+        {
+            for (Integer i = 0; i < x - 1; i++)
+            {
+                if (NumList[i] > NumList[i + 1])
+                {
+                    integer z = Numlist[i];
+                    NumList[i] = NumList[i + 1];
+                    NumList[i + 1] = z;
+                }
+            }
+        }
+    }
+public static Integer nFactorial( Integer n)
+    {
+        int fact = 1;
+    
+    	for (int i = 1; i <= n; i++)
+    		{
+        		fact = fact * i;
+    		}
+    }
+    
+    public static List<Integer> rotateLeftNTimes( List<Integer> nList, Integer n) 
+    
+    {
+		int x = sizeof(nList[0]);
+
+		int z = 0;
+    
+    for(int i = 0; i < y; i++)
+    {
+        
+        int t = nList[0];
+        for(int j = 0; j < x; j++)
+        {
+            z = nList[j];
+            nList[j] = nList[j + 1];
+            nList[j + 1] = z;
+        }
+        nList[x - 1] = t;
+    }
+        
+    }
+    
+    public static Boolean bracketsAreBalanced( String s )
+    {
+        
+    }
+    public static void updateAccountSize( )
+    {
+        List<Account> accts = [SELECT name, NumberOfEmployees, size_c  FROM Account];
+		
+		for(Account x: accts)
+			{
+			if(x.NumberOfEmployees >= 1000)
+				{
+					x.size = 'small';
+				}
+			if(x.NumberOfEmployees = 1000 || x.NumberOfEmployees <= 10000)
+				{
+					x.size = 'medium';
+				}
+			if(x.NumberOfEmployees > 10000)
+				{
+					x.size = 'Large';
+				}
+			}
+	
+         
+    }	
+}
