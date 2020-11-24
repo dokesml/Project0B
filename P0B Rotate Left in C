@@ -1,0 +1,40 @@
+#include <cs50.h>
+#include <stdio.h>
+
+void Rotate(int RotateL[], int y, int x)
+{
+    int z = 0;
+    
+    for(int i = 0; i < y; i++)
+    {
+        
+        int t = RotateL[0];
+        for(int j = 0; j < x; j++)
+        {
+            z = RotateL[j];
+            RotateL[j] = RotateL[j + 1];
+            RotateL[j + 1] = z;
+        }
+        RotateL[x - 1] = t;
+    }
+}
+
+void printRotated(int RotateL[], int x)
+{
+    for(int i = 0; i < x; i++)
+    {
+        printf("%d, ", RotateL[i]);
+    }
+    printf("\n");
+}
+
+
+int main()
+{
+    int RotateL[] = {1, 2, 3, 4, 5};
+    int y = 6;
+    int x = sizeof(RotateL)/sizeof(RotateL[0]);
+    Rotate(RotateL, y, x);
+    printRotated(RotateL, x);
+    
+}
